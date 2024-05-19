@@ -45,20 +45,29 @@ The cost function measures the difference between predicted and actual values. I
 
 - linear regression hypothesis
 
-$$ f_{\vec{w}, b}(\vec{x}) = w_1x_1 + w_2x_2 +\ ... \ + w_nx_n + b $$
-$$ \vec{x} = [x_1, x_2, ..., x_n] \ \ \ \vec{w} = [w_1, w_2, ..., w_n] $$
-$$ f_{\vec{w}, b}(\vec{x}) = \vec{w} . \vec{x} + b $$
-- gradient descent
+$$
+f_{\vec{w}, b}(\vec{x}) = w_1x_1 + w_2x_2 + \ldots + w_nx_n + b
 $$
 
+$$
+\vec{x} = [x_1, x_2, \ldots, x_n] \quad \vec{w} = [w_1, w_2, \ldots, w_n]
+$$
+
+$$
+f_{\vec{w}, b}(\vec{x}) = \vec{w} \cdot \vec{x} + b
+$$
+
+
+
+- gradient descent
+
+$$
 \begin{aligned}
-w_i = w_i - \frac{\partial J(w_1, w_2, ..., w_n, b)}{\partial w_i}\\
-b = b - \frac{\partial J(w_1, w_2, ..., w_n, b)}{\partial b}\\
-\frac{\partial J}{\partial \omega} = \frac{1}{m}\sum_{i=0}^{m-1} (f_{\omega, b}(x^{(i)}) - y^{(i)}) * x^{(i)} \\
-\frac{\partial J}{\partial b} = \frac{1}{m}\sum_{i=0}^{m-1} (f_{\omega, b}(x^{(i)}) - y^{(i)})
-
+w_i &= w_i - \frac{\partial J(w_1, w_2, \ldots, w_n, b)}{\partial w_i}\\
+b &= b - \frac{\partial J(w_1, w_2, \ldots, w_n, b)}{\partial b}\\
+\frac{\partial J}{\partial \omega} &= \frac{1}{m}\sum_{i=0}^{m-1} (f_{\omega, b}(x^{(i)}) - y^{(i)}) \cdot x^{(i)} \\
+\frac{\partial J}{\partial b} &= \frac{1}{m}\sum_{i=0}^{m-1} (f_{\omega, b}(x^{(i)}) - y^{(i)})
 \end{aligned}
-
 $$
 
 
