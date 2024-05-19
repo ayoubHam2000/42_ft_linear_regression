@@ -41,6 +41,27 @@ The cost function measures the difference between predicted and actual values. I
 
 ![](static/2.png)
 
+## Formulas
+
+- linear regression hypothesis
+
+$$ f_{\vec{w}, b}(\vec{x}) = w_1x_1 + w_2x_2 +\ ... \ + w_nx_n + b $$
+$$ \vec{x} = [x_1, x_2, ..., x_n] \ \ \ \vec{w} = [w_1, w_2, ..., w_n] $$
+$$ f_{\vec{w}, b}(\vec{x}) = \vec{w} . \vec{x} + b $$
+- gradient descent
+$$
+
+\begin{aligned}
+w_i = w_i - \frac{\partial J(w_1, w_2, ..., w_n, b)}{\partial w_i}\\
+b = b - \frac{\partial J(w_1, w_2, ..., w_n, b)}{\partial b}\\
+\frac{\partial J}{\partial \omega} = \frac{1}{m}\sum_{i=0}^{m-1} (f_{\omega, b}(x^{(i)}) - y^{(i)}) * x^{(i)} \\
+\frac{\partial J}{\partial b} = \frac{1}{m}\sum_{i=0}^{m-1} (f_{\omega, b}(x^{(i)}) - y^{(i)})
+
+\end{aligned}
+
+$$
+
+
 ## Resources
 
 - [Machine Learning Specialization: Coursera](https://www.coursera.org/specializations/machine-learning-introduction?utm_campaign=WebsiteCourses-MLS-TopButton-mls-launch-2022&utm_medium=institutions&utm_source=deeplearning-ai)
