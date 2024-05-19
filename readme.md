@@ -14,6 +14,19 @@ This project utilizes linear regression to predict car prices based on mileage d
 - Cost Function
 - Metrics (Mean Squared Error, R-squared Score)
 
+## Installation & Usage
+
+```bash
+pip install numpy
+pip install matplotlib
+```
+
+```bash
+python3 train_model.py
+python3 estimatePrice.py
+python3 precision.py
+```
+
 ## Linear Regression
 Linear regression is a statistical method used to model the relationship between a dependent variable and one or more independent variables. In this project, we use linear regression to model the relationship between car prices and mileage.
 
