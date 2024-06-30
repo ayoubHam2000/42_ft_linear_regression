@@ -3,7 +3,7 @@
 ![](static/1.jpeg)
 
 ## Overview
-This project utilizes linear regression to predict car prices based on mileage data. The README covers key concepts and libraries used in the implementation.
+This project utilizes linear regression to predict car prices based on mileage data.
 
 ## Key Concept
 - Linear Regression
